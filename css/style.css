@@ -664,6 +664,7 @@ input[type="radio"].visually-hidden {
 
 .contact-info {
   width: 1200px;
+  position: relative;
 }
 
 .contacts {
@@ -671,15 +672,18 @@ input[type="radio"].visually-hidden {
   background: var(--background-off-white-cool);
   border-radius: 16px;
   color: var(--dark-text);
-  padding: 32px 25px;
+  padding: 30px 25px;
+  position: absolute;
+  top: 62px;
+  right: 27px;
+  z-index: 3;
 }
 
-.contscts-title {
+.contacts-title {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
-  margin-bottom: 8px;
 }
 
 .contacts address {
@@ -687,12 +691,78 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .contacts a {
+  display:block;
   font-weight: bold;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
+  color: inherit;
+  border-bottom: 1px solid transparent;
+}
+
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--link-hover);
+  border-bottom: 1px solid var(--transparent-white);
+}
+
+.contacts-text {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.feedback-button {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 13px 28px;
+}
+
+/* Footer */
+
+.footer-display-flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-top: 18px;
+  padding-bottom: 26px;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.social-icon {
+  position: relative;
+}
+
+.social-icon::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+}
+
+.facebook::before {
+  background: url(../img/fb.svg);
+}
+
+.vk::before {
+  background: url(../img/vk.svg);
 }
