@@ -50,10 +50,10 @@
               Пусто
           </a>
         </nav>
-        <div class="info">
+        <p class="info">
           с 10 до 20, ежедневно <br />
           <a href="tel:+78124502525">8 812 450-25-25</a>
-        </div>
+        </p>
       </div>
     </header>
     <main class="page-content">
@@ -79,14 +79,14 @@
             </li>
           </ul>
           <div class="slider-controls">
-            <button aria-label="Первый слайд" class="current " color="green" data type="button"></button>
+            <button aria-label="Первый слайд" class="current" color="green" data type="button"></button>
             <button aria-label="Второй слайд" color="gray" data type="button"></button>
             <button aria-label="Третий слайд" color=brown data type="button"></button>
           </div>
         </div>
       </section>
       <section class="promo-offer">
-        <div class="container promo-display-grid">
+        <div class="container two-cloumn-grid">
           <h2 class="visually-hidden">Специальные предложения</h2>
           <div class="promo-card-left promo-card">
             <h3 class="promo-card-title">Малинка даром!</h3>
@@ -111,29 +111,37 @@
           <h2 class="visually-hidden">Наши хиты</h2>
           <ul class="hit-list">
             <li class="hit-item">
-              <img src="img/hit1.png" alt="" width="267" height="267" />
-              <span class="price">310</span><span class="kg">/кг</span>
+              <img src="img/hit1.png" class="hit-item-img" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267" />
+              <div class="price-info">
+                <span class="price">310 ₽</span><span class="weight">/кг</span>
+              </div> 
               <p class="item-description">
                 Сливочное с апельсиновым джемом и цитрусовой стружкой
               </p>
             </li>
             <li class="hit-item">
-              <img src="img/hit2.png" alt="" width="267" height="267"/>
-              <span class="price">380</span><span class="kg">/кг</span>
+              <img src="img/hit2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267"/>
+              <div class="price-info">
+                <span class="price">380 ₽</span><span class="weight">/кг</span>
+              </div>  
               <p class="item-description">
                 Сливочно-кофейное с кусочками шоколада
               </p>
             </li>
             <li class="hit-item">
-              <img src="img/hit3.png" alt="" width="267" height="267"/>
-              <span class="price">355</span><span class="kg">/кг</span>
+              <img src="img/hit3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267"/>
+              <div class="price-info">
+                <span class="price">355 ₽</span><span class="weight">/кг</span>
+              </div> 
               <p class="item-description">
                 Сливочно-клубничное с присыпкой из белого шоколада
               </p>
             </li>
             <li class="hit-item">
-              <img src="img/hit4.png" alt="" width="267" height="267" />
-              <span class="price">415</span><span class="kg">/кг</span>
+              <img src="img/hit4.png" alt="Сливочное крем-брюле с&nbsp;карамельной подливкой" width="267" height="267" />
+              <div class="price-info">
+                <span class="price">415 ₽</span><span class="kg">/кг</span>
+              </div> 
               <p class="item-description">
                 Сливочное крем-брюле с карамельной подливкой
               </p>
@@ -143,94 +151,93 @@
       </section>
       <section class="about-gllacy">
         <div class="container">
-          <h2>
-            Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого
-            собственного производства на развес
-          </h2>
-          <div class="about-content">
-            <p class="about-text">
-              Все наше мороженое изготавливается на собственном производстве, с
-              использованием современного оборудования и проверенных временем
-              технологий.
-            </p>
-            <p class="about-text">
-              Закупка ингредиентов производится только у проверенных фермерских
-              хозяйств и компаний, с которыми нас связывает долговременное
-              сотрудничество.
-            </p>
-            <p class="about-text">
-              Для приготовления мороженого используются настоящие сливки и
-              молоко высочайшего качества. Все дополнительные ингредиенты и
-              добавки произведены из натурального, экологически чистого сырья.
-            </p>
-            <p class="about-text">
-              Доставка нашего мороженого до заказчиков осуществляется в
-              специальном термопаке, который не дает мороженому растаять в пути
-              и позволяет сохранить превосходный вкус.
-            </p>
+          <div class="about-gllacy-container">
+            <h2 class="about-gllacy-title">
+              Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого
+              собственного производства на развес
+            </h2>
+            <div class="about-content">
+              <p class="about-text text-content-icon ice-cream-icon">
+                Все наше мороженое изготавливается на собственном производстве, с
+                использованием современного оборудования и проверенных временем
+                технологий.
+              </p>
+              <p class="about-text text-content-icon cow-icon">
+                Закупка ингредиентов производится только у проверенных фермерских
+                хозяйств и компаний, с которыми нас связывает долговременное
+                сотрудничество.
+              </p>
+              <p class="about-text text-content-icon leaf-icon">
+                Для приготовления мороженого используются настоящие сливки и
+                молоко высочайшего качества. Все дополнительные ингредиенты и
+                добавки произведены из натурального, экологически чистого сырья.
+              </p>
+              <p class="about-text text-content-icon thermometer-icon">
+                Доставка нашего мороженого до заказчиков осуществляется в
+                специальном термопаке, который не дает мороженому растаять в пути
+                и позволяет сохранить превосходный вкус.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <div>
-        <div class="container">
-          <article class="new-blogpost">
-            <h2>Новое в нашем блоге</h2>
-            <a href="#" class="new-post"
-              >10 способов сервировки фруктовых щербетов к столу</a
-            >
-          </article>
+      <div class="container two-cloumn-grid">
+        <article class="new-blogpost">
+          <h2 class="new-blogpost-title">Новое в нашем блоге</h2>
+          <a href="#" class="new-blogpost-link">
+            10 способов сервировки <br>фруктовых щербетов <br>к столу
+          </a>
+        </article>
+        <section class="newsletter-wrap">
           <div class="newsletter-signup">
             <h2 class="visually-hidden">Подпишись на наши новости</h2>
+            <p class="newsletter-signup-text">
+              Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе
+              всего самого вкусного, что у нас происходит. Обещаем не спамить
+              и не слать всякой ненужной ерунды. Честно =)
+            </p>
             <form action="https://echo.htmlacademy.ru" method="post">
-              <label for="email-signup"
-                >Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе
-                всего самого вкусного, что у нас происходит. Обещаем не спамить
-                и не слать всякой ненужной ерунды. Честно =)</label
-              >
-              <input
-                type="email"
-                id="email-signup"
-                placeholder="email@example.com"
-              />
-              <button type="submit" class="standard-button">Отправить</button>
+              <input type="email" class="email-signup" id="email-signup" placeholder="email@example.com"/>
+              <button type="submit" class="button signup-button">Отправить</button>
             </form>
-          </div>
-        </div>
+          </div> 
+        </section>
       </div>
-      <section>
+      <section class="contact-info">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts">
-          <h3>Адрес главного офиса и офлайн-магазина:</h3>
+          <h3 class="contacts-title">Адрес главного офиса <br>и офлайн-магазина:</h3>
           <address>ул. Большая Конюшенная, 19/8, Санкт-Петербург</address>
-          <h3>Для заказов по телефону:</h3>
+          <h3 class="contacts-title">Для заказов по телефону:</h3>
           <a href="tel:+78124502525">8 812 450-25-25</a>
-          <p>(с 10 до 20 ежедневно)</p>
-          <button type="button" class="standard-button">
+          <p class="contacts-text">(с 10 до 20 ежедневно)</p>
+          <button type="button" class="button feedback-button">
             Форма обратной связи
           </button>
         </div>
-        <div class="map">
+        <section class="map">
           <h3 class="visually-hidden">Gllacy на карте</h3>
           <img src="" alt="ул. Большая Конюшенная, 19/8, Санкт-Петербург" />
-        </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5880778605506!2d30.32561159055991!3d59.938977136977975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1594121159766!5m2!1sru!2sru" width="1200" height="430" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container footer-display-flex">
         <section class="socials">
           <h2 class="visually-hidden">Gllacy в социальных сетях</h2>
-          <ul class="socials-list" aria-label="Facebook">
+          <ul class="socials-list">
             <li class="socials-item">
-              <a href="#">Facebook</a>
+              <a href="#" class="social-icon facebook" aria-label="Facebook"></a>
             </li>
-            <li class="socials-item" aria-label="Вконтакте">
-              <a href="#">Вконтакте</a>
+            <li class="socials-item" >
+              <a href="#" class="social-icon vk" aria-label="Вконтакте"></a>
             </li>
-            <li class="socials-item" aria-label="Instagram">
-              <a href="#">Instagram</a>
+            <li class="socials-item" >
+              <a href="#" class="social-icon instagram" aria-label="Instagram"></a>
             </li>
-            <li class="socials-item" aria-label="Twitter">
-              <a href="#">Twitter</a>
+            <li class="socials-item" >
+              <a href="#" class="social-icon twitter" aria-label="Twitter"></a>
             </li>
           </ul>
         </section>
