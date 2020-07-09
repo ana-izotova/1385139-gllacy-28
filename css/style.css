@@ -39,6 +39,7 @@
   --cart-box-shadow: rgba(0, 0, 0, 0.4);
   --text-shadow-price: rgba(49, 50, 53, 0.5);
   --menu-box-shadow: #696969;
+  --input-text-gray: #999999;
   --middle-gray-text: #5a5a5a;
   --dark-text: #323232;
 }
@@ -832,6 +833,19 @@ button.login-button {
   border-radius: 70px;
 }
 
+/* Contacts info - map */
+
+.map {
+  position: relative;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
 /* Footer */
 
 .footer-display-flex {
@@ -953,4 +967,59 @@ button.login-button {
 
 .copyright a {
   display: block;
+}
+
+.feedback {
+  width: 477px;
+  background: var(--background-off-white-warm);
+  border-radius: 6px;
+  padding: 20px 25px 25px 23px;
+  position: relative;
+}
+
+.feedback-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--dark-text);
+  margin: 0px;
+  margin-bottom: 26px;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 18px;
+  height: 17px;
+  background: url(../img/cross-big.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feedback input {
+  display: block;
+  background: var(--basic-white);
+  border: 1px solid var(--border-gray);
+  border-radius: 4px;
+  padding: 16px 14px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--input-text-gray);
+  margin-bottom: 20px;
+}
+
+.feedback textarea {
+  display: block;
+  background: var(--basic-white);
+  border: 1px solid var(--border-gray);
+  border-radius: 4px;
+  padding: 16px 14px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--input-text-gray);
+  margin-bottom: 20px;
 }
