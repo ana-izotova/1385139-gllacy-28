@@ -129,22 +129,28 @@
         </div>
       </section>
       <section class="best-sellers">
-        <div class="container">
+        <div class="container shop-items">
           <h2 class="visually-hidden">Наши хиты</h2>
           <ul class="hit-list">
-            <li class="hit-item">
-              <div class="icecream-image-wrap">
-                <img src="img/hit1.png" class="hit-item-img" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267" />
+            <li class="hit-item" tabindex=0>
+              
+                <div class="icecream-image-wrap">
+                  <img src="img/hit1.png" class="hit-item-img" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267" />
+                </div>
+                <div class="price-info">
+                  <span class="price">310 ₽</span><span class="weight">/кг</span>
+                </div>  
+                <p class="item-description">
+                  Сливочное с апельсиновым джемом и цитрусовой стружкой
+                </p>
+                <div class="quick-view">
+                <a href="#" class="button quick-view-button">Быстрый просмотр</a>
               </div>
-              <div class="price-info">
-                <span class="price">310 ₽</span><span class="weight">/кг</span>
-              </div> 
-              <p class="item-description">
-                Сливочное с апельсиновым джемом и цитрусовой стружкой
-              </p>
             </li>
             <li class="hit-item">
-              <img src="img/hit2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267"/>
+              <div class="icecream-image-wrap">
+                <img src="img/hit2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267"/>
+              </div>
               <div class="price-info">
                 <span class="price">380 ₽</span><span class="weight">/кг</span>
               </div>  
@@ -153,7 +159,9 @@
               </p>
             </li>
             <li class="hit-item">
-              <img src="img/hit3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267"/>
+              <div class="icecream-image-wrap">
+                <img src="img/hit3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267"/>
+              </div>
               <div class="price-info">
                 <span class="price">355 ₽</span><span class="weight">/кг</span>
               </div> 
@@ -162,7 +170,9 @@
               </p>
             </li>
             <li class="hit-item">
-              <img src="img/hit4.png" alt="Сливочное крем-брюле с&nbsp;карамельной подливкой" width="267" height="267" />
+              <div class="icecream-image-wrap">
+                <img src="img/hit4.png" alt="Сливочное крем-брюле с&nbsp;карамельной подливкой" width="267" height="267" />
+              </div>
               <div class="price-info">
                 <span class="price">415 ₽</span><span class="kg">/кг</span>
               </div> 
@@ -306,8 +316,7 @@
         <label for="feedback" class="visually-hidden">Оставьте ваш отзыв</label>
         <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="В свободной форме">
         </textarea>
-      
-        <button type="submit" class="standard-button">Отправить</button>
+        <button type="submit" class="button feedback-submit-button">Отправить</button>
       </form>
     </section>
   </body>
